@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>用github搭建这个博客过程 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这篇文章主要讲述一下我搭建这个博客的过程,因为已经弄好了,这中间很多东西都是我在网上找的,很多细节也记不清了,所以只能提供大概的步骤.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用github搭建这个博客过程">
+<meta property="og:url" content="http://yoursite.com/2017/08/12/2017-8-12-build-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这篇文章主要讲述一下我搭建这个博客的过程,因为已经弄好了,这中间很多东西都是我在网上找的,很多细节也记不清了,所以只能提供大概的步骤.">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-02-10T12:50:47.641Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用github搭建这个博客过程">
+<meta name="twitter:description" content="这篇文章主要讲述一下我搭建这个博客的过程,因为已经弄好了,这中间很多东西都是我在网上找的,很多细节也记不清了,所以只能提供大概的步骤.">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2017-8-12-build-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/12/2017-8-12-build-blog/" class="article-date">
+  <time datetime="2017-08-12T07:41:13.000Z" itemprop="datePublished">2017-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      用github搭建这个博客过程
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章主要讲述一下我搭建这个博客的过程,因为已经弄好了,这中间很多东西都是我在网上找的,很多细节也记不清了,所以只能提供大概的步骤.<br><a id="more"></a></p>
+<h1 id="创建github"><a href="#创建github" class="headerlink" title="创建github"></a>创建github</h1><p>包括申请账号,然后填写ssh公匙(ssh是和http类似的协议,如果用http,每次提交数据都要输入账号密码),具体的过程可以百度一下</p>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><p>git这个东西我现在也不太了解,它是一个版本控制器,具体的安装有各个平台的下载地址,下载安装就可以了,至于具体的git命令,稍后我会介绍要用到的git命令</p>
+<h1 id="仓库建立"><a href="#仓库建立" class="headerlink" title="仓库建立"></a>仓库建立</h1><p>在github界面右上角点击加号下面的<strong>new repository</strong>建立自己的仓库,仓库名一定要是<strong>usename.github.io</strong> usename就是你github的用户名,以后这个名称(usename.github.io)也是你博客的网址.其他没具体的要求,点击创建就可以了,现在你就可以有自己的仓库了</p>
+<h1 id="博客的搭建"><a href="#博客的搭建" class="headerlink" title="博客的搭建"></a>博客的搭建</h1><p>将自己的仓库克隆到本地,使用git命令</p>
+<blockquote>
+<p>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:acqierement/acqierement.github.io.git</p>
+</blockquote>
+<p>后面是仓库地址,这里写的是我的仓库地址,再强调一遍,仓库地址有http和ssh两种类型,不要复制错了.之后在你的本地就会有一个.io结尾的文件夹,点进去,将里面的文件全部删掉.但隐藏的系统文件不要删,比如有一个.git文件就要保留着.然后去下载你喜欢的模板,现在流行的有jekyll和hexo,选择一个自己喜欢的模板,下载下来,然后把模板里面的全部东西复制到原来本地的仓库地址.接下来就是把自己的代码传到github上(当然你可以先卡下一步,写一篇自己的博客再上传看看自己博客的样子)</p>
+<blockquote>
+<p>git add –all</p>
+</blockquote>
+<blockquote>
+<p> git commit -m “msg”(后面的msg是自己可以随便写的,用来记录你做了什么改动)</p>
+</blockquote>
+<blockquote>
+<p> git push origin master 这个是提交的代码</p>
+</blockquote>
+<blockquote>
+<p>git pull origin master这个是将github上更新的代码传到本地</p>
+</blockquote>
+<h1 id="写自己的博客"><a href="#写自己的博客" class="headerlink" title="写自己的博客"></a>写自己的博客</h1><p>我用的是jekyll主题的,它的博客是写在_posts文件夹里面的,用<em>markdown</em>语法写的,具体用法请百度(请原谅我的不靠谱,因为我才刚起步),写完别忘了要用前面的语句上传到github上</p>
+<p><strong>当然,最后你就可以输入usename.github.io去看自己的博客了</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/12/2017-8-12-build-blog/" data-id="cjlkl7px30001ektuj9e35xk4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/02/10/2018-2-10-text/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          博客的重建
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/02/2018-2-10-hahah/">博客的重建</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/10/2018-2-10-text/">博客的重建</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/12/2017-8-12-build-blog/">用github搭建这个博客过程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
